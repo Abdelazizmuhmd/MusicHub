@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="943fded6-e55a-4aff-8136-d13dbaeec8a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/common/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/common/Repository/SongMetaDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/common/entity/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/common/entity/SongMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/resources/common.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/ResourceApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/config/BlobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/handler/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceRegistry/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceRegistry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/java/serviceregistry/ServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServiceRegistry/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SongService/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SongService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SongService/src/main/java/songservice/SongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SongService/src/main/java/songservice/controller/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SongService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/azure/azure-storage-blob/12.16.1/azure-storage-blob-12.16.1.jar!/com/azure/storage/blob/BlobClient.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/com/azure/azure-storage-blob/12.16.1/azure-storage-blob-12.16.1.jar!/com/azure/storage/blob/models/BlobHttpHeaders.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.0.13/spring-web-6.0.13.jar!/org/springframework/http/MediaType.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2YPkQOlBxEiawrCJMxpIPKlKEuC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Projects/ArrowMusic/Common/src/main/java/common&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abdel/Desktop/service-registration-and-discovery (2)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\ArrowMusic" />
+      <recent name="D:\Projects\ArrowMusic\ResourceService\src\main\java\org\arrow" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="common" />
+      <recent name="" />
+      <recent name="resourceservice" />
+      <recent name="songservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.arrow.controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ResourceService">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Common" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ResourceService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="resourceservice.ResourceApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistry" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ServiceRegistry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="serviceregistry.ServiceRegistry" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SongService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="songservice.SongService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Spring Boot.ServiceRegistry" />
+      <item itemvalue="Spring Boot.SongService" />
+      <item itemvalue="Spring Boot.ResourceService" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="943fded6-e55a-4aff-8136-d13dbaeec8a6" name="Changes" comment="" />
+      <created>1700434585367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700434585367</updated>
+      <workItem from="1700434586366" duration="1447000" />
+      <workItem from="1700436045776" duration="350000" />
+      <workItem from="1700600367092" duration="3207000" />
+      <workItem from="1700922590613" duration="5410000" />
+      <workItem from="1700950367727" duration="8956000" />
+      <workItem from="1701022827071" duration="13000" />
+      <workItem from="1702240714261" duration="4456000" />
+      <workItem from="1702688271446" duration="300000" />
+      <workItem from="1702688583752" duration="3568000" />
+      <workItem from="1702737445399" duration="553000" />
+      <workItem from="1702771795439" duration="1119000" />
+      <workItem from="1702821947524" duration="1344000" />
+      <workItem from="1702823307073" duration="91000" />
+      <workItem from="1702823408020" duration="179000" />
+      <workItem from="1702823595629" duration="2259000" />
+      <workItem from="1704637925556" duration="1142000" />
+      <workItem from="1704740668449" duration="841000" />
+      <workItem from="1704744334901" duration="5006000" />
+      <workItem from="1704832241343" duration="16000" />
+      <workItem from="1704832450778" duration="8350000" />
+      <workItem from="1705760030626" duration="1275000" />
+      <workItem from="1705802445229" duration="9914000" />
+      <workItem from="1705861255873" duration="2299000" />
+      <workItem from="1705866822367" duration="287000" />
+      <workItem from="1705867119410" duration="6616000" />
+      <workItem from="1705873934384" duration="377000" />
+      <workItem from="1705874326500" duration="146000" />
+      <workItem from="1705876085218" duration="1743000" />
+      <workItem from="1705877839929" duration="881000" />
+      <workItem from="1705878735738" duration="211000" />
+      <workItem from="1705878958019" duration="1223000" />
+      <workItem from="1705880707318" duration="45000" />
+      <workItem from="1705880766595" duration="1639000" />
+      <workItem from="1705882418398" duration="12000" />
+      <workItem from="1709959766018" duration="11000" />
+      <workItem from="1715019783239" duration="808000" />
+      <workItem from="1715113215956" duration="1205000" />
+      <workItem from="1715189992579" duration="460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ResourceService/src/main/java/resourceservice/controller/ResourceController.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
