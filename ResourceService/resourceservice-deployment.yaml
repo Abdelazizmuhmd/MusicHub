@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resourceservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resourceservice
+  template:
+    metadata:
+      labels:
+        app: resourceservice
+    spec:
+      containers:
+        - name: resourceservice
+          image: zodic/mypublicdockerhub:resourceservice
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "dev"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: resourceservice
+spec:
+  type: NodePort
+  ports:
+    - port: 8081
+      targetPort: 8081
+      nodePort: 30080
+  selector:
+    app: resourceservice
+

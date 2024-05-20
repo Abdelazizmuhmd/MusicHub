@@ -1,15 +1,21 @@
-package org.arrow.controller;
+package resourceservice.controller;
 
-import org.apache.tika.metadata.Metadata;
-import org.apache.tika.parser.AutoDetectParser;
-import org.apache.tika.parser.ParseContext;
-import org.apache.tika.parser.Parser;
-import entity.Song;
-import entity.SongMetaData;
-import org.arrow.handler.ResourceService;
+import com.netflix.appinfo.InstanceInfo;
+import com.netflix.discovery.EurekaClient;
+import common.entity.Song;
+import common.entity.SongMetaData;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+import org.jaudiotagger.audio.AudioFile;
+import org.jaudiotagger.audio.AudioFileIO;
 import org.jaudiotagger.audio.exceptions.CannotReadException;
 import org.jaudiotagger.audio.exceptions.InvalidAudioFrameException;
 import org.jaudiotagger.audio.exceptions.ReadOnlyFileException;
+import org.jaudiotagger.tag.FieldKey;
+import org.jaudiotagger.tag.Tag;
 import org.jaudiotagger.tag.TagException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -17,20 +23,16 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import org.xml.sax.helpers.DefaultHandler;
-import org.jaudiotagger.audio.AudioFile;
-import org.jaudiotagger.audio.AudioFileIO;
-import org.jaudiotagger.tag.FieldKey;
-import org.jaudiotagger.tag.Tag;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import org.springframework.web.multipart.MultipartFile;
+import resourceservice.handler.ResourceService;
 
 @RestController
 @RequestMapping("/resources")
@@ -39,17 +41,24 @@ public class ResourceController {
     @Autowired
     private ResourceService resourceService;
 
+    @Autowired
+    private EurekaClient eurekaClient;
+
     @PostMapping("/")
     public ResponseEntity<?> uploadAudio(@RequestParam("file") MultipartFile file) {
       try {
 
-        String apiUrl = "http://localhost:8080/resources/songs";
+        InstanceInfo instanceInfo = eurekaClient.getApplication("SONG-SERVICE").getInstances().get(0);
+        String host = instanceInfo.getHostName();
+        int port = instanceInfo.getPort();
+
+        String apiUrl = "http://"+host+":"+port+"/songs/submit";
 
         // Validate if the file is an MP3
         if (!isMP3File(file)) {
           return ResponseEntity.status(400).body("Validation failed. Only MP3 files are allowed.");
         }
-        String blobId = resourceService.uploadAudio(file);
+        String blobId = "test"; //resourceService.uploadAudio(file);
 
         SongMetaData metadata = extractMetadata(file, blobId);
         HttpHeaders headers = new HttpHeaders();
@@ -103,7 +112,8 @@ public class ResourceController {
             String length = String.valueOf(audioFile.getAudioHeader().getTrackLength());
             String year = tag.getFirst(FieldKey.YEAR);
 
-            return new SongMetaData(name, artist, length, blobId, album, year);
+          return SongMetaData.builder().album(album).name(name).resourceId(blobId).artist(artist)
+              .year(year).length(length).build();
         }
         return null;
     }

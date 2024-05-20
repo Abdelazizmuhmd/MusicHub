@@ -1,0 +1,47 @@
+#version: '3'
+#
+#services:
+#  resourceservice:
+#    build:
+#      context: ./ResourceService
+#      dockerfile: dockerfile  # path to your songService Dockerfile
+#    ports:
+#      - "8081:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=dev
+#
+#  serviceregistry:
+#    build:
+#      context: ./ServiceRegistry
+#      dockerfile: dockerfile  # path to your songService Dockerfile
+#    ports:
+#      - "8761:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=dev
+#
+#  songservice:
+#    build:
+#      context: ./SongService
+#      dockerfile: dockerfile  # path to your songService Dockerfile
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=dev
+#
+#  mysql:
+#    image: mysql:latest
+#    container_name: mysqlcontainer
+#    environment:
+#      MYSQL_ROOT_PASSWORD: rootpassword
+#      MYSQL_DATABASE: arrowmusicdb
+#      MYSQL_USER: arrowmusicuser
+#      MYSQL_PASSWORD: arrowmusicpassword
+#    ports:
+#      - "3306:3306"
+#    expose:
+#      - "3306"
+#    volumes:
+#      - mysql_data:/var/lib/mysql
+#
+#volumes:
+#  mysql_data:

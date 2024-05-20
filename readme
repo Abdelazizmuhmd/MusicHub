@@ -1,0 +1,1 @@
+./ResourceService docker build -t zodic/mypublicdockerhub:resourceservicepush .

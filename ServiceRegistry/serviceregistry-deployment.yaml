@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: serviceregistry
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: serviceregistry
+  template:
+    metadata:
+      labels:
+        app: serviceregistry
+    spec:
+      containers:
+        - name: serviceregistry
+          image: zodic/mypublicdockerhub:serviceregistry
+          ports:
+            - containerPort: 8761

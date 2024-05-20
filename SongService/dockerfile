@@ -1,0 +1,16 @@
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:17-oracle
+
+
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the JAR file into the container at /usr/src/app
+COPY target/SongService-1.0-SNAPSHOT.jar .
+
+# Expose the port that the app will run on
+EXPOSE 8080
+
+# Define the command to run your app
+CMD ["java", "-jar", "SongService-1.0-SNAPSHOT.jar"]
